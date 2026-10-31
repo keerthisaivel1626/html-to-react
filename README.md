@@ -452,6 +452,44 @@ React handles UI updates, while Parcel optimizes how application code and assets
 | `npm run build` | Run the configured production build script |
 
 ---
+## 11. Browserslist – Browser Compatibility
 
+Browserslist defines which browsers and browser versions our application should support.
+
+It helps build tools like Parcel, Babel and Autoprefixer generate compatible JavaScript and CSS.
+
+### Configuration in package.json
+
+```json
+{
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
+```
+
+### Common Queries
+
+| Query | Meaning |
+|---|---|
+| `last 2 versions` | Latest 2 versions of each browser |
+| `> 1%` | Browsers with more than 1% global usage |
+| `not dead` | Excludes browsers without support or updates for 24 months |
+| `defaults` | Recommended default browser set |
+| `last 2 Chrome versions` | Latest 2 Chrome versions |
+
+### Important Points
+
+- Browserslist defines browser compatibility targets.
+- Parcel uses these targets during the build process.
+- Babel uses them to determine required JavaScript transformations.
+- Autoprefixer uses them to add necessary CSS vendor prefixes.
+- Multiple queries are combined using OR by default.
+
+**Playground:** https://browserslist.dev/
+
+**Remember:** Browserslist defines which browsers to support; build tools use that information to generate compatible output.
 
 
