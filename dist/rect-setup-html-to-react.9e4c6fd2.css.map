@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAGA;;;;AAGA","sources":["index.css"],"sourcesContent":[".separate-heading{\r\n    color:green\r\n}\r\n#heading{\r\n    color:blue\r\n}\r\n.text{\r\n    color: red;\r\n}"],"names":[],"version":3,"file":"rect-setup-html-to-react.9e4c6fd2.css.map","sourceRoot":"/__parcel_source_root/"}
