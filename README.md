@@ -491,5 +491,78 @@ It helps build tools like Parcel, Babel and Autoprefixer generate compatible Jav
 **Playground:** https://browserslist.dev/
 
 **Remember:** Browserslist defines which browsers to support; build tools use that information to generate compatible output.
+## 13. JSX (JavaScript XML)
+
+JSX is a JavaScript syntax extension that allows us to write UI using HTML-like and XML-like syntax inside JavaScript.
+
+**Important:** JSX is not HTML. It only looks similar to HTML.
+
+### Example: Writing JSX
+
+```jsx
+const heading = <h1>Hello React</h1>;
+```
+
+### How JSX works
+
+Browsers cannot directly understand JSX. It needs to be transformed into regular JavaScript.
+
+Babel is a JavaScript compiler that transforms JSX into JavaScript.
+
+### JSX Transformation Flow
+
+```text
+JSX Code
+   |
+   v
+Babel Transformation
+   |
+   v
+React.createElement()
+   |
+   v
+React Element (JavaScript Object)
+   |
+   v
+ReactDOM
+   |
+   v
+Actual HTML DOM Element
+```
+
+### Example
+
+**1. JSX Code:**
+
+```jsx
+const heading = <h1>Hello React</h1>;
+```
+
+**2. Babel transforms it into:**
+
+```javascript
+const heading = React.createElement(
+    "h1",
+    {},
+    "Hello React"
+);
+```
+
+**3. React Element**
+
+`React.createElement()` creates a React element, which is a JavaScript object describing the UI.
+
+**4. ReactDOM**
+
+ReactDOM takes the React element and renders the corresponding actual HTML DOM element inside the browser.
+
+### Important Points
+
+- JSX makes writing UI easier and more readable.
+- JSX is not HTML or a template string.
+- Babel transforms JSX into JavaScript.
+- Parcel integrates Babel into its build process.
+- React elements are JavaScript objects, not actual HTML elements.
+- ReactDOM renders those elements into the browser DOM.
 
 
