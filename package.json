@@ -1,0 +1,22 @@
+{
+  "name": "html-to-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keerthisaivel1626/html-to-react.git"
+  },
+  "author": "keerthana vadivel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keerthisaivel1626/html-to-react/issues"
+  },
+  "homepage": "https://github.com/keerthisaivel1626/html-to-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
